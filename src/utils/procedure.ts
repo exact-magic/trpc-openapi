@@ -37,7 +37,7 @@ export const forEachOpenApiProcedure = (
 ) => {
   for (const [path, procedure] of Object.entries(procedureRecord)) {
     const { openapi } = procedure._def.meta ?? {};
-    if (openapi && openapi.enabled !== false) {
+    if (openapi) {
       const type = getProcedureType(procedure);
       callback({ path, type, procedure, openapi });
     }

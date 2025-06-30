@@ -16,6 +16,10 @@ export const getOpenApiPathsObject = (
 
   forEachOpenApiProcedure(procedures, ({ path: procedurePath, type, procedure, openapi }) => {
     const procedureName = `${type}.${procedurePath}`;
+    
+    if (openapi.enabled === false) {
+      return;
+    }
 
     try {
       if (type === 'subscription') {
