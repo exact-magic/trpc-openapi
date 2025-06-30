@@ -1,6 +1,6 @@
 {
-  "name": "trpc-openapi",
-  "version": "1.2.0",
+  "name": "@exact-magic/trpc-openapi",
+  "version": "1.2.1",
   "description": "tRPC OpenAPI",
   "author": "James Berry <jb@jamesbe.com>",
   "private": false,
@@ -70,5 +70,8 @@
     "ts-jest": "^29.1.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }
